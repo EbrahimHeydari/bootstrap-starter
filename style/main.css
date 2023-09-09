@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Vazir;
+  src: url('../public/Vazir.ttf') format('truetype');
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  font-family: Vazir;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  min-height: 100vh;
+  background: #eee !important;
+  text-align: center !important;
+}
+
+/* Header */
+.logo {
+  filter: invert(1);
+}
+
+.dropdown-item>a {
+  color: #bebebe;
+  transition: .3s;
+}
+
+.dropdown-item>a:hover {
+  color: #fff;
+}
+
+#search {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+#search:hover {
+  color: #000;
+  background-color: #f9fafb;
+  border-color: #f9fafb;
+}
+
+#search:focus {
+  color: #000;
+  background-color: #f9fafb;
+  border-color: #f9fafb;
+  box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+}
+
+/* Main */
+.side,
+.part {
+  min-height: 50vh;
+  background-color: #fff !important;
+}
+
+.card {
+  max-width: 300px !important;
+  margin-bottom: 1rem !important;
+  padding: 0 !important;
+}
+
+.side {
+  display: flex !important;
+  flex-flow: column nowrap !important;
+}
+
+/* Footer */
+.title-gray {
+  color: gray;
+}
+
+.icon img {
+  width: 30px;
+}
+
+.address {
+  color: #fff;
+}
+
+/* Mode */
+.active {
+  background-color: #555 !important;
+  color: #f5f5f5;
+}
+
+.switch>input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.switch>label {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid #778899;
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+}
+
+.switch>label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.switch>input:checked+label::after {
+  transform: translate(-25px);
+  background-color: #fff;
+}
+
+/* Dark Mode */
+.switch>#click {
+  border: 1px solid #778899;
+}
+
+.switch>#click::after {
+  background-color: #000;
+}
+
+.switch>input:checked+#click::after {
+  background-color: #fff;
+}
+
+.switch>input:checked+#click {
+  background-color: #000;
+}
+
+/* Theme */
+/* primary */
+.switch>.primary::after {
+  background-color: #0d6efd;
+}
+
+.switch>input:checked+.primary {
+  background-color: #0d6efd;
+}
+
+/* info */
+.switch>.info::after {
+  background-color: #0dcaf0;
+}
+
+.switch>input:checked+.info {
+  background-color: #0dcaf0;
+}
+
+/* warning */
+.switch>.warning::after {
+  background-color: #ffc107;
+}
+
+.switch>input:checked+.warning {
+  background-color: #ffc107;
+}
+
+/* danger */
+.switch>.danger::after {
+  background-color: #dc3545;
+}
+
+.switch>input:checked+.danger {
+  background-color: #dc3545;
+}
+
+/* success */
+.switch>.success::after {
+  background-color: #198754;
+}
+
+.switch>input:checked+.success {
+  background-color: #198754;
+}
