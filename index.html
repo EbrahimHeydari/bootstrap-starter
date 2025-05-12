@@ -1,315 +1,335 @@
 <!DOCTYPE html>
-<html lang='en' dir='rtl'>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.rtl.min.css" />
+    <title>Bootstrap Starter</title>
+  </head>
 
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel='stylesheet' href='./style/main.css'>
-  <link rel='stylesheet' href='./style/bootstrap.min.css'>
-  <link rel='stylesheet' href='./style/bootstrap.rtl.min.css'>
-  <title>Bootstrap Starter</title>
-</head>
+  <body>
+    <header class="head">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="px-2 container-fluid">
+          <a href="index.html" class="navbar-brand m-0">
+            <img
+              src="public/icon/logo.png"
+              class="d-inline-block MX-0 logo"
+              alt="logo"
+              width="60" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-bs-target="#navbar-menu"
+            data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <header class='head'>
-    <nav class='navbar navbar-expand-md navbar-dark bg-dark sticky-top'>
-      <div class='px-2 container-fluid'>
-        <a href='index.html' class='navbar-brand m-0'>
-          <img src='public/icon/logo.png' class='d-inline-block MX-0 logo' alt='logo' width='60'>
-        </a>
-        <button class='navbar-toggler' data-bs-target='#navbar-menu' data-bs-toggle='collapse'>
-          <span class='navbar-toggler-icon'></span>
-        </button>
-
-        <div class='collapse navbar-collapse' id='navbar-menu'>
-          <ul class='navbar-nav w-75 justify-content-evenly'>
-            <li class='nav-item'>
-              <a href='#' class='nav-link'>ثبت نام</a>
-            </li>
-            <li class='nav-item'>
-              <a href='#' class='nav-link'>ورود</a>
-            </li>
-            <li class='nav-item'>
-              <a href='#' class='nav-link'>جشنواره</a>
-            </li>
-            <li class='nav-item dropdown'>
-              <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>قطعات یدکی</a>
-              <ul class='dropdown-menu dropdown-menu-dark mb-3'>
-                <li class='dropdown-header'>قطعات داخلی</li>
-                <li class='dropdown-item'>
-                  <a href='#'>سیلندر</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>گیربکس</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>ترموستات</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>سوپاپ</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>باتری</a>
-                </li>
-                <div class='dropdown-divider'></div>
-                <li class='dropdown-header'>قطعات خارجی</li>
-                <li class='dropdown-item'>
-                  <a href='#'>لاستیک</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>کاپوت</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>قفل</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>پدال ترمز</a>
-                </li>
-                <li class='dropdown-item'>
-                  <a href='#'>چراغ جلو</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class='d-flex'>
-            <input type='text' class='form-control bg-transparent text-light' placeholder='جستجو'>
-            <button class='btn me-1' id='search'>
-              جستجو
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class='main container-fluid row mx-auto p-0 my-3 justify-content-evenly'>
-    <article class='col-12 col-md-8 col-lg-9 mb-3'>
-      <section class='part row justify-content-evenly'>
-        <h3 class='display-6 py-5'>تازه ترین محصولات</h3>
-        <div class='card w-100'>
-          <img src='public/image/1.jpg' alt='car' class='card-img' width='300'>
-          <div class='card-body'>
-            <h4 class='card-title'>آئودی</h4>
-            <table class='card-text table w-100 text-start'>
-              <tr>
-                <td>سال ساخت:</td>
-                <td>2014</td>
-              </tr>
-              <tr>
-                <td>کارکرد:</td>
-                <td>0 کیلومتر</td>
-              </tr>
-              <tr>
-                <td>تولید:</td>
-                <td>وارداتی</td>
-              </tr>
-              <tr>
-                <td>فروشنده:</td>
-                <td>نمایشگاه</td>
-              </tr>
-              <tr>
-                <td>کشور سازنده:</td>
-                <td>فرانسه</td>
-              </tr>
-              <tr>
-                <td>رنگ:</td>
-                <td>آبی</td>
-              </tr>
-              <tr>
-                <td>قیمت:</td>
-                <td>35000$</td>
-              </tr>
-            </table>
-            <a href='' class='card-link text-info'>جزئیات بیشتر</a>
-          </div>
-        </div>
-        <div class='card w-100'>
-          <img src='public/image/2.jpg' alt='car' class='card-img'>
-          <div class='card-body'>
-            <h4 class='card-title'>بنز</h4>
-            <table class='card-text table w-100 text-start'>
-              <tr>
-                <td>سال ساخت:</td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>کارکرد:</td>
-                <td>0 کیلومتر</td>
-              </tr>
-              <tr>
-                <td>تولید:</td>
-                <td>وارداتی</td>
-              </tr>
-              <tr>
-                <td>فروشنده:</td>
-                <td>شخصی</td>
-              </tr>
-              <tr>
-                <td>کشور سازنده:</td>
-                <td>آلمان</td>
-              </tr>
-              <tr>
-                <td>رنگ:</td>
-                <td>سیاه</td>
-              </tr>
-              <tr>
-                <td>قیمت:</td>
-                <td>85000$</td>
-              </tr>
-            </table>
-            <a href='' class='card-link text-info'>جزئیات بیشتر</a>
-          </div>
-        </div>
-        <div class='card w-100'>
-          <img src='public/image/3.jpg' alt='car' class='card-img'>
-          <div class='card-body'>
-            <h4 class='card-title'>پورشه</h4>
-            <table class='card-text table w-100 text-start'>
-              <tr>
-                <td>سال ساخت:</td>
-                <td>2015</td>
-              </tr>
-              <tr>
-                <td>کارکرد:</td>
-                <td>0 کیلومتر</td>
-              </tr>
-              <tr>
-                <td>تولید:</td>
-                <td>وارداتی</td>
-              </tr>
-              <tr>
-                <td>فروشنده:</td>
-                <td>شخصی</td>
-              </tr>
-              <tr>
-                <td>کشور سازنده:</td>
-                <td>ایتالیا</td>
-              </tr>
-              <tr>
-                <td>رنگ:</td>
-                <td>قزمز</td>
-              </tr>
-              <tr>
-                <td>قیمت:</td>
-                <td>63700$</td>
-              </tr>
-            </table>
-            <a href='' class='card-link text-info'>جزئیات بیشتر</a>
-          </div>
-        </div>
-      </section>
-    </article>
-    <aside class='col-12 col-md-4 col-lg-3'>
-      <div class='side'>
-        <div class='card w-100 mx-auto rounded-0 mb-0'>
-          <div class='card-body'>
-            <h4 class='card-title mt-2'>سفارشی سازی</h4>
-            <div class='switch d-flex justify-content-between mt-5'>
-              <p class='d-inline'>طرح زمینه</p>
-              <input id='darkCheck' type='checkbox'>
-              <label id='click' for='darkCheck'></label>
-            </div>
-            <div class='themes mt-5'>
-              <h5>رنگ بندی</h5>
-              <div class='switch d-flex justify-content-between'>
-                <p class='d-inline'>آبی</p>
-                <input id='primary' type='checkbox'>
-                <label for='primary' class='primary'></label>
-              </div>
-              <div class='switch d-flex justify-content-between'>
-                <p class='d-inline'>سبز</p>
-                <input id='success' type='checkbox'>
-                <label for='success' class='success'></label>
-              </div>
-              <div class='switch d-flex justify-content-between'>
-                <p class='d-inline'>نیلی</p>
-                <input id='info' type='checkbox'>
-                <label for='info' class='info'></label>
-              </div>
-              <div class='switch d-flex justify-content-between'>
-                <p class='d-inline'>زرد</p>
-                <input id='warning' type='checkbox'>
-                <label for='warning' class='warning'></label>
-              </div>
-              <div class='switch d-flex justify-content-between'>
-                <p class='d-inline'>قرمز</p>
-                <input id='danger' type='checkbox'>
-                <label for='danger' class='danger'></label>
-              </div>
-            </div>
-          </div>
-
-          <div class='my-5 dropdown'>
-            <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>دسته بندی ها</a>
-            <ul class='dropdown-menu dropdown-menu-dark w-50'>
-              <li class='dropdown-item'>
-                <a href='#'>کلاسیک</a>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav w-75 justify-content-evenly">
+              <li class="nav-item">
+                <a href="#" class="nav-link">ثبت نام</a>
               </li>
-              <li class='dropdown-item'>
-                <a href='#'>مدرن</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">ورود</a>
               </li>
-              <li class='dropdown-item'>
-                <a href='#'>تازه ها</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">جشنواره</a>
               </li>
-              <li class='dropdown-item'>
-                <a href='#'>برترین ها</a>
-              </li>
-              <li class='dropdown-item'>
-                <a href='#'>سریع ترین ها</a>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >قطعات یدکی</a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark mb-3">
+                  <li class="dropdown-header">قطعات داخلی</li>
+                  <li class="dropdown-item">
+                    <a href="#">سیلندر</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">گیربکس</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">ترموستات</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">سوپاپ</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">باتری</a>
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <li class="dropdown-header">قطعات خارجی</li>
+                  <li class="dropdown-item">
+                    <a href="#">لاستیک</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">کاپوت</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">قفل</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">پدال ترمز</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">چراغ جلو</a>
+                  </li>
+                </ul>
               </li>
             </ul>
+            <form class="d-flex">
+              <input
+                type="text"
+                class="form-control bg-transparent text-light"
+                placeholder="جستجو" />
+              <button class="btn me-1" id="search">جستجو</button>
+            </form>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main
+      class="main container-fluid row mx-auto p-0 my-3 justify-content-evenly">
+      <article class="col-12 col-md-8 col-lg-9 mb-3">
+        <section class="part row justify-content-evenly">
+          <h3 class="display-6 py-5">تازه ترین محصولات</h3>
+          <div class="card w-100">
+            <img
+              src="public/image/1.jpg"
+              alt="car"
+              class="card-img"
+              width="300" />
+            <div class="card-body">
+              <h4 class="card-title">آئودی</h4>
+              <table class="card-text table w-100 text-start">
+                <tr>
+                  <td>سال ساخت:</td>
+                  <td>2014</td>
+                </tr>
+                <tr>
+                  <td>کارکرد:</td>
+                  <td>0 کیلومتر</td>
+                </tr>
+                <tr>
+                  <td>تولید:</td>
+                  <td>وارداتی</td>
+                </tr>
+                <tr>
+                  <td>فروشنده:</td>
+                  <td>نمایشگاه</td>
+                </tr>
+                <tr>
+                  <td>کشور سازنده:</td>
+                  <td>فرانسه</td>
+                </tr>
+                <tr>
+                  <td>رنگ:</td>
+                  <td>آبی</td>
+                </tr>
+                <tr>
+                  <td>قیمت:</td>
+                  <td>35000$</td>
+                </tr>
+              </table>
+              <a href="" class="card-link text-info">جزئیات بیشتر</a>
+            </div>
+          </div>
+          <div class="card w-100">
+            <img src="public/image/2.jpg" alt="car" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">بنز</h4>
+              <table class="card-text table w-100 text-start">
+                <tr>
+                  <td>سال ساخت:</td>
+                  <td>2017</td>
+                </tr>
+                <tr>
+                  <td>کارکرد:</td>
+                  <td>0 کیلومتر</td>
+                </tr>
+                <tr>
+                  <td>تولید:</td>
+                  <td>وارداتی</td>
+                </tr>
+                <tr>
+                  <td>فروشنده:</td>
+                  <td>شخصی</td>
+                </tr>
+                <tr>
+                  <td>کشور سازنده:</td>
+                  <td>آلمان</td>
+                </tr>
+                <tr>
+                  <td>رنگ:</td>
+                  <td>سیاه</td>
+                </tr>
+                <tr>
+                  <td>قیمت:</td>
+                  <td>85000$</td>
+                </tr>
+              </table>
+              <a href="" class="card-link text-info">جزئیات بیشتر</a>
+            </div>
+          </div>
+          <div class="card w-100">
+            <img src="public/image/3.jpg" alt="car" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">پورشه</h4>
+              <table class="card-text table w-100 text-start">
+                <tr>
+                  <td>سال ساخت:</td>
+                  <td>2015</td>
+                </tr>
+                <tr>
+                  <td>کارکرد:</td>
+                  <td>0 کیلومتر</td>
+                </tr>
+                <tr>
+                  <td>تولید:</td>
+                  <td>وارداتی</td>
+                </tr>
+                <tr>
+                  <td>فروشنده:</td>
+                  <td>شخصی</td>
+                </tr>
+                <tr>
+                  <td>کشور سازنده:</td>
+                  <td>ایتالیا</td>
+                </tr>
+                <tr>
+                  <td>رنگ:</td>
+                  <td>قزمز</td>
+                </tr>
+                <tr>
+                  <td>قیمت:</td>
+                  <td>63700$</td>
+                </tr>
+              </table>
+              <a href="" class="card-link text-info">جزئیات بیشتر</a>
+            </div>
+          </div>
+        </section>
+      </article>
+      <aside class="col-12 col-md-4 col-lg-3">
+        <div class="side">
+          <div class="card w-100 mx-auto rounded-0 mb-0">
+            <div class="card-body">
+              <h4 class="card-title mt-2">سفارشی سازی</h4>
+              <div class="switch d-flex justify-content-between mt-5">
+                <p class="d-inline">طرح زمینه</p>
+                <input id="darkCheck" type="checkbox" />
+                <label id="click" for="darkCheck"></label>
+              </div>
+              <div class="themes mt-5">
+                <h5>رنگ بندی</h5>
+                <div class="switch d-flex justify-content-between">
+                  <p class="d-inline">آبی</p>
+                  <input id="primary" type="checkbox" />
+                  <label for="primary" class="primary"></label>
+                </div>
+                <div class="switch d-flex justify-content-between">
+                  <p class="d-inline">سبز</p>
+                  <input id="success" type="checkbox" />
+                  <label for="success" class="success"></label>
+                </div>
+                <div class="switch d-flex justify-content-between">
+                  <p class="d-inline">نیلی</p>
+                  <input id="info" type="checkbox" />
+                  <label for="info" class="info"></label>
+                </div>
+                <div class="switch d-flex justify-content-between">
+                  <p class="d-inline">زرد</p>
+                  <input id="warning" type="checkbox" />
+                  <label for="warning" class="warning"></label>
+                </div>
+                <div class="switch d-flex justify-content-between">
+                  <p class="d-inline">قرمز</p>
+                  <input id="danger" type="checkbox" />
+                  <label for="danger" class="danger"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-5 dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >دسته بندی ها</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark w-50">
+                <li class="dropdown-item">
+                  <a href="#">کلاسیک</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">مدرن</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">تازه ها</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">برترین ها</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">سریع ترین ها</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="foot bg-dark w-100 m-0 row pt-5 align-items-start">
+      <div class="text-light col-12 col-md-6 mb-5">
+        <h4 class="title-gray mb-3">درباره ما</h4>
+        <p>
+          این نمایشگاه در سال 1390 کار خود را از فروش قطعات خودرو شروع کرد. اما
+          با گذشت زمان اقدام به توسعه و گسترش کسب و کار خود کرده و امروز شاهد
+          این هستیم که با کیفیت ترین خودرو ها را برای شما به نمایش بگذاریم
+        </p>
       </div>
-    </aside>
-  </main>
 
-  <footer class='foot bg-dark w-100 m-0 row pt-5 align-items-start'>
+      <div class="text-light col-12 col-md-6 mb-5">
+        <h4 class="title-gray mb-3">ارتباط با ما</h4>
 
-    <div class='text-light col-12 col-md-6 mb-5'>
-      <h4 class='title-gray mb-3'>درباره ما</h4>
-      <p>
-        این نمایشگاه در سال 1390 کار خود را از فروش قطعات خودرو شروع کرد. اما با گذشت زمان اقدام به توسعه و
-        گسترش
-        کسب و کار خود کرده و امروز شاهد این هستیم که با کیفیت ترین خودرو ها را برای شما به نمایش بگذاریم
-      </p>
-    </div>
+        <p class="address">آدرس: مشهد، منطقه 7، محله رباط، خیابان کارآفرین</p>
 
-    <div class='text-light col-12 col-md-6 mb-5'>
-      <h4 class='title-gray mb-3'>ارتباط با ما</h4>
-
-      <p class='address'>
-        آدرس: مشهد، منطقه 7، محله رباط، خیابان کارآفرین
-      </p>
-
-      <p>شماره های تماس: 09156752382 - 051384216</p>
-
-    </div>
-
-    <div class='namad col-12 col-md-6 mb-5'>
-      <h4 class='title-gray mb-3'>نماد های الکترونیکی</h4>
-      <img src='public/icon/enamad.png' alt='enamad'>
-      <img src='public/icon/samandehi.png' alt='samandehi'>
-    </div>
-
-    <div class='support col-12 col-md-6 mb-5'>
-      <h5 class='title-gray my-5'>پشتیبانی</h5>
-      <div class='icon d-flex justify-content-evenly'>
-        <a href='#'><img src='public/icon/instagram.svg' alt='instagram'></a>
-        <a href='#'><img src='public/icon/telegram.svg' alt='telegram'></a>
-        <a href='#'><img src='public/icon/whatsapp.svg' alt='whatsapp'></a>
+        <p>شماره های تماس: 09156752382 - 051384216</p>
       </div>
-    </div>
 
-    <div class='copyright text-light mt-5 col-12 mt-5'>
-      <p>
-        تمامی حقوق مادی و معنوی این وبسایت متعلق به فروشگاه ماموت می باشد. &copy;
-      </p>
-    </div>
-  </footer>
+      <div class="namad col-12 col-md-6 mb-5">
+        <h4 class="title-gray mb-3">نماد های الکترونیکی</h4>
+        <img src="public/icon/enamad.png" alt="enamad" />
+        <img src="public/icon/samandehi.png" alt="samandehi" />
+      </div>
 
-  <script src='script/main.js'></script>
-  <script src='script/bootstrap.bundle.min.js'></script>
-</body>
+      <div class="support col-12 col-md-6 mb-5">
+        <h5 class="title-gray my-5">پشتیبانی</h5>
+        <div class="icon d-flex justify-content-evenly">
+          <a href="#"
+            ><img src="public/icon/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#"><img src="public/icon/telegram.svg" alt="telegram" /></a>
+          <a href="#"><img src="public/icon/whatsapp.svg" alt="whatsapp" /></a>
+        </div>
+      </div>
 
+      <div class="copyright text-light mt-5 col-12 mt-5">
+        <p>
+          تمامی حقوق مادی و معنوی این وبسایت متعلق به فروشگاه ماموت می باشد.
+          &copy;
+        </p>
+      </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
